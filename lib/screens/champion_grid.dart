@@ -47,10 +47,10 @@ class _ChampionsGridState extends State<ChampionsGrid> {
           : GridView.builder(
               padding: EdgeInsets.all(8),
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,
-                childAspectRatio: 0.75,
-                crossAxisSpacing: 10,
-                mainAxisSpacing: 10,
+                crossAxisCount: 4,  // Changed to 4 items per row
+                childAspectRatio: 0.7,  // Adjusted for narrower cards
+                crossAxisSpacing: 8,
+                mainAxisSpacing: 8,
               ),
               itemCount: _champions.length,
               itemBuilder: (context, index) {
